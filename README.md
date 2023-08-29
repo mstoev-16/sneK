@@ -17,7 +17,7 @@ In the bottom of the screen there are 3 score indicator - your current score, yo
 
 ## Knights order and directions
 
-[Legend]([https://github.com/mstoev-16/sneK/images/11398836/snek_knights.png])
+[Legend](https://github.com/mstoev-16/sneK/blob/main/images/snek_knights.png)
 
 
 ## Author

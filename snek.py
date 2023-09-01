@@ -104,7 +104,7 @@ LAST_SCORE_POS = (
     LAST_SCORE_LABEL_POS[1] + LAST_SCORE_LABEL.get_height() + HUD_THICKNESS)
 
 # Player configuration
-PLAYER = pygame.image.load('alien.png')
+PLAYER = pygame.image.load('images/alien.png')
 PLAYER_SIZE = PLAYER.get_rect().size
 player_current_score = 0
 player_x = (WIDTH - PLAYER_SIZE[0]) // 2  # starting position
@@ -112,7 +112,7 @@ player_y = (BORDER_DIMENSIONS[1] - 2 * HUD_DIMENSIONS[1] - PLAYER_SIZE[1]) // 2
 PLAYER_SPEED = 5
 
 # Enemies configuration
-KNIGHT = pygame.image.load('knight.png')
+KNIGHT = pygame.image.load('images/knight.png')
 KNIGHT_SIZE = KNIGHT.get_rect().size
 left_knights_x = HUD_THICKNESS
 right_knights_x = WIDTH
@@ -129,7 +129,7 @@ knight_speed = 6
 KNIGHTS_SPAWNED = [False] * 4
 
 # Pickable items configuration
-apple = pygame.image.load('green_apple.png')
+apple = pygame.image.load('images/green_apple.png')
 apple_size = apple.get_rect().size
 apple_x = (WIDTH - apple_size[0]) // 2  # starting position
 apple_y = (BORDER_DIMENSIONS[1] - HUD_DIMENSIONS[1] + apple_size[1]) // 2
@@ -187,9 +187,6 @@ while GAME_RUNNING:
                     player_y < knights_y_positions[i] + KNIGHT_SIZE[1] and \
                     player_y + PLAYER_SIZE[1] > knights_y_positions[i]:
                 save_score()
-                print('dead')
-                print(knights_x_positions[1], knights_x_positions[2], knights_x_positions[3], knights_x_positions[4])
-                print(knights_y_positions[1], knights_y_positions[2], knights_y_positions[3], knights_y_positions[4])
                 GAME_RUNNING = False
 
     # Controls and moving
